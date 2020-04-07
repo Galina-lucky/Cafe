@@ -6,10 +6,9 @@
 	box-sizing: border-box;
 }
 
-button {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+a {
+	text-decoration: none;
+	color: #262626;
 }
 
 a, button, input[type=button], input[type=submit] {
@@ -22,16 +21,11 @@ a, button, input[type=button], input[type=submit] {
 html, body {
 	font-family: 'Raleway', 'PT Sans', 'Pacifico', Arial, Helvetica, sans-serif, cursive;
 	font-size: 16px;
-	line-height: 1;
+	line-height: 1.6875;
 	color: #262626;
 	height: 100%;
 	max-height: 100vh;
 }
-/*
-main {
-	padding-left: 15px;
-	padding-right: 15px;
-}*/
 
 .header {
 	padding-top: 47px;
@@ -53,8 +47,6 @@ main {
 
 .logo {
 	font: 3.125rem "Pacifico";
-	text-decoration: none;
-	color: #262626;
 	line-height: 1;
 }
 
@@ -79,9 +71,7 @@ main {
 
 .nav__link {
 	display: inline-block;
-	color: #262626;
 	text-transform: uppercase; 
-	text-decoration: none;
 	position: relative;
 }
 
@@ -113,13 +103,12 @@ main {
 	margin-bottom: 30px;
 }
 
-.info__title--header {
+.header__title {
 	font-size: 3.75rem;
 }
 
 .info__lead {
 	font: 1.0625rem 'PT Sans';
-	line-height: 1.6875em;
 }
 
 .info__lead:not(:last-child) {
@@ -143,7 +132,7 @@ main {
 	border: none;
 	border-radius: 0;
 	outline: none;
-	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
 }
 
 .btn-primary {
@@ -153,16 +142,18 @@ main {
 }
 
 .btn-primary:hover {
-	background-color: red;
+	color: #ff6033;
+	background-color: #ffffff;
+	outline: #ff6033 solid 3px;
 }
 
 .btn-primary:active {
-	opacity: 0.4;
-	color: #262626;
+	background-color: #f13500;
+	color: #ffffff;
 }
 
 .btn-primary:focus {
-	opacity: 0.8;
+	outline: #f50000 solid 3px;
 }
 
 .section-about {
@@ -202,8 +193,7 @@ main {
 	font-weight: 700;
 	line-height: 1.35;
 	white-space: normal;
-	color: #262626;
-	box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .btn-services:not(:last-child) {
@@ -240,6 +230,19 @@ main {
 	background-image: url(../image/icon-organize.svg);
 }
 
+.btn-services:hover {
+	background-color: #c7dffb;
+	outline: #5c8ab3 solid 3px;
+}
+
+.btn-services:active {
+	background-color: #689fde;
+}
+
+.btn-services:focus {
+	outline: #545dd6 solid 3px;
+}
+
 .section-services__block {
 	position: relative;
 }
@@ -248,12 +251,119 @@ main {
 	margin-left: 110px;
 }
 
-.info__title--services {
+.section-services__title {
 	position: absolute;
 	top: calc(50% - 45px);
 	right: 0;
 	line-height: 1;
 	margin-bottom: 0;
+}
 
-	
+.section-gallery {
+	background-color: #ffe92f;
+	padding-top: 100px;
+	padding-bottom: 120px;
+	text-align: center;
+}
+
+.info--gallery {
+	margin-bottom: 45px;
+}
+
+.info__title--gallery {
+	margin-bottom: 45px;
+}
+
+.section-gallery__photos {
+	font-size: 0;
+	margin-bottom: 42px;
+}
+
+.section-gallery__img {
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.btn-second {
+	text-transform: uppercase;
+	background-color: #5585a2;
+	color: #ffffff;
+}
+
+.btn-second:hover {
+	color: #5585a2;
+	background-color: #ffffff;
+	outline: #5585a2 solid 2px;
+}
+
+.btn-second:active {
+	background-color: #306788;
+	color: #ffffff;
+}
+
+.btn-second:focus {
+	outline: #7bcdff solid 3px;
+}
+
+.section-subscribe {
+	background: url(../image/bg-subscribe.jpg);
+	padding-top: 140px;
+	padding-bottom: 163px;
+}
+
+.info__title--subscribe {
+	font-size: 2.5rem;
+}
+
+.btn-third {
+	text-transform: uppercase;
+	background-color: #96b92c;
+	color: #ffffff;
+}
+
+.btn-third:hover {
+	background-color: #ffffff;
+	color: #96b92c;
+	outline: #96b92c solid 3px;
+}
+
+.btn-third:active {
+	background-color: #7d9c1f;
+	color: #ffffff;
+}
+
+.btn-third:focus {
+	outline: #ccf15b solid 3px;
+}
+
+.form-subscribe__input-field {
+	width: 100%;
+	font: 0.9375rem 'Raleway';
+	font-weight: 300;
+	line-height: 1.8;
+	padding: 12px 12px;
+	border: #262626 solid 1px;
+	outline-color: transparent; 
+}
+
+.form-subscribe__input-field:hover {
+	outline: #96b92c solid 3px;
+}
+
+.form-subscribe__input-field:active {
+	outline: #7d9c1f solid 3px;
+}
+
+.form-subscribe__input-field:focus {
+	outline: #ccf15b solid 3px;
+}
+
+.section-blog {
+	background-color: #b07cf7;
+	padding-top: 100px;
+	padding-bottom: 120px;
+	text-align: center;
+	color: #ffffff;
 }
