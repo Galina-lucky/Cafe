@@ -95,3 +95,12 @@
 .col-offset-5 {
 	margin-left: 41.6666666%;
 }
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
