@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Pacifico&family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Raleway:wght@300;400;700&display=swap');
 
 * {
 	margin: 0;
@@ -19,7 +19,7 @@ a, button, input[type=button], input[type=submit] {
 }
 
 html, body {
-	font-family: 'Raleway', 'PT Sans', 'Pacifico', Arial, Helvetica, sans-serif, cursive;
+	font-family: 'Raleway', /*'PT Sans',*/ Arial, Helvetica, sans-serif;
 	font-size: 16px;
 	line-height: 1.6875;
 	color: #262626;
@@ -46,11 +46,6 @@ html, body {
 	margin-bottom: 255px;
 }
 
-.logo {
-	font: 3.125rem "Pacifico";
-	line-height: 1;
-}
-
 .nav {
 	float: right;
 	padding-top: 13px;
@@ -60,7 +55,7 @@ html, body {
 	display: inline;
 	list-style-type: none;
 	padding-left: 0;
-	font: 1rem 'Raleway';
+	font-size: 1rem;
 	font-weight: bold;
 	margin-right: 1.875em;
 	padding-top: 0.5em;
@@ -99,7 +94,7 @@ html, body {
 }
 
 .nav__link:focus {
-	outline: #ff6033 solid 3px;
+	outline: #ff6033 solid 1px;
 }
 
 .info {
@@ -111,17 +106,19 @@ html, body {
 }
 
 .info__title {
-	font: 5.625rem 'Raleway';
+	font-size: 5.625rem;
 	font-weight: 700;
-	margin-bottom: 30px;
+	margin-bottom: 16px;
+	line-height: 1.3;
 }
 
-.info__title--header {
+.header__title {
 	font-size: 3.75rem;
 }
 
 .info__lead {
-	font: 1.0625rem 'Raleway';
+	font-size: 1.0625rem;
+	line-height: 1.5882352;
 }
 
 .info__lead:not(:last-child) {
@@ -132,7 +129,7 @@ html, body {
 	display: inline-block;
 	min-width: 170px;
 	padding: 0.9em 1.35em;
-	font: 1.25rem 'Raleway';
+	font-size: 1.25rem;
 	font-weight: 300;	
 	line-height: 1;
 	text-align: center;
@@ -190,7 +187,7 @@ html, body {
 	padding-bottom: 70px;
 }
 
-.info--about {
+.section-about__info {
 	padding-left: 70px;
 }
 
@@ -271,12 +268,13 @@ html, body {
 	outline: #545dd6 solid 3px;
 }
 
-.section-services__block {
+.wrapper--relative {
 	position: relative;
 }
 
 .section-services__img {
-	margin-left: 110px;
+	margin-left: auto;
+	display: flex;
 }
 
 .section-services__title {
@@ -291,14 +289,6 @@ html, body {
 	background-color: #ffe92f;
 	padding-top: 100px;
 	padding-bottom: 120px;
-}
-
-.info--big-margin {
-	margin-bottom: 45px;
-}
-
-.info__title--big-margin {
-	margin-bottom: 45px;
 }
 
 .section-gallery__photos {
@@ -367,7 +357,7 @@ html, body {
 
 .form-subscribe__input-field {
 	width: 100%;
-	font: 0.9375rem 'Raleway';
+	font-size: 0.9375rem;
 	font-weight: 300;
 	line-height: 1.8;
 	padding: 12px 12px;
@@ -438,12 +428,12 @@ html, body {
 }
 
 .blog-article__day {
-	font: 2rem 'Raleway';
+	font-size: 2rem;
 	font-weight: 700;
 }
 
 .blog-article__month {
-	font: 1.3125rem 'Raleway';
+	font-size: 1.3125rem;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -459,7 +449,8 @@ html, body {
 
 .blog-article__title {
 	display: block;
-	font: 1.25rem 'PT Sans';
+	font-family: 'PT Sans';
+	font-size: 1.25rem;
 	line-height: 1.25;
 	font-weight: 400;
 	margin-bottom: 20px;
@@ -467,7 +458,8 @@ html, body {
 
 .blog-article__autor {
 	display: block;
-	font: 0.8125rem 'PT Sans';
+	font-family: 'PT Sans';
+	font-size: 0.8125rem;
 }
 
 .btn-fourth {
@@ -497,9 +489,9 @@ html, body {
 	padding-bottom: 115px;
 }
 
-.wrapper-input {
+/*.wrapper-input {
 	position: relative;
-}
+}*/
 
 .wrapper-input:not(:last-child) {
 	margin-bottom: 15px;
@@ -508,7 +500,7 @@ html, body {
 .form-contact__text {
 	background-color: #00c4c4;
 	width: 500px;
-	font: 0.9375rem 'Raleway';
+	font-size: 0.9375rem;
 	color: #ffffff;
 	font-weight: 700;
 	line-height: 1.5625;
@@ -554,13 +546,13 @@ html, body {
 }
 
 .contact__title {
-	font: 1.0625rem 'Raleway';
+	font-size: 1.0625rem;
 	font-weight: 700;
 	line-height: 1,470588;
 }
 
 .contact__lead {
-	font: 1.25rem 'Raleway';
+	font-size: 1.25rem;
 	font-weight: 300;
 	line-height: 1.25;
 }
@@ -576,14 +568,14 @@ html, body {
 }
 
 .copyright {
-	font: 1rem 'Raleway';
+	font-size: 1rem;
 	color: #ffffff;
 	font-weight: 300;
 	line-height: 1.5625;
 }
 
 .site-author {
-	font: 0.9375rem 'Raleway';
+	font-size: 0.9375rem;
 	color: #ffffff;
 	font-weight: 300;
 	line-height: 1.666666;
@@ -595,6 +587,6 @@ html, body {
 }
 
 .logo--small {
-	font-size: 1.5625rem;
-	color: #b9b9b9;
+	width: 64px;
+	height: 26px;
 }

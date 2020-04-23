@@ -10,14 +10,16 @@
 	<meta name="keywords" content="" />
 	<link rel="icon" href="image/icons.png"/>
 	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" href="css/layout.css">
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
 	<header class="header">
 		<div class="container">
 			<div class="header__top">
-				<a href="#" class="logo">Cahee</a>
+				<a href="#">
+				<img src="image/logo.svg" class="logo" alt="logotype">
+				</a>
 				<ul class="nav">
 					<li class="nav__item">
 						<a href="#" class="nav__link">Home</a>
@@ -42,17 +44,14 @@
 			<div class="row">
 				<div class="col-4">
 					<div class="info">
-						<h1 class="info__title info__title--header">
+						<h1 class="info__title header__title">
 							Fresh Life
 						</h1>
 						<p class="info__lead">
 							Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 						</p>
 					</div>
-
-					<a href="" class="btn btn-primary">
-							Get free now
-					</a>
+					<a href="#" class="btn btn-primary">Get free now</a>
 				</div>
 			</div>
 			<a href="#about" class="scroll">
@@ -68,9 +67,8 @@
 					<div class="col-6">
 						<img src="image/img-about.png" alt="Cup of raspberries" class="section-about__img">
 					</div>
-
 					<div class="col-6">
-						<div class="info info--about">
+						<div class="info section-about__info">
 							<h2 class="info__title">
 								About us
 							</h2>
@@ -88,22 +86,17 @@
 		<section id="services" class="section-services">
 			<div class="container">
 				<div class="row">
-
 					<div class="col-5 col-offset-1">
-						
-						<div class="section-services__controls">
+					<div class="section-services__controls">
 							<a href="#" class="btn btn-services btn-services--shopping">
 								Online Shopping
 							</a>
-
 							<a href="#" class="btn btn-services btn-services--product">
 								Quality Product
 							</a>
-
 							<a href="#" class="btn btn-services btn-services--delivery">
 								Domestic&International Delivery
 							</a>
-
 							<a href="#" class="btn btn-services btn-services--organized">
 								Well Organized
 							</a>
@@ -112,7 +105,7 @@
 					</div>
 
 					<div class="col-6">
-						<div class="section-services__block">
+						<div class="wrapper--relative">
 							<img src="image/img-services.png" alt="tomatoes" class="section-services__img">
 							<h2 class="info__title section-services__title">
 							Our Services
@@ -126,8 +119,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-6 col-offset-3">
-						<div class="info info--big-margin">
-							<h2 class="info__title info--center info__title--big-margin">
+						<div class="info info--center">
+							<h2 class="info__title">
 								Gallery
 							</h2>
 							<p class="info__lead">
@@ -136,7 +129,36 @@
 						</div>
 					</div>
 				</div>
-				<div class="section-gallery__photos">
+				<div class="row">
+					<div class="section-gallery__photos">
+						<div class="row">
+						<div class="col-8">
+							<img src="image/img-gallery1.png" alt="plate of peaches" class="section-gallery__img">
+						</div>
+						<div class="col-4">
+							<div class="row">
+								<img src="image/img-gallery2.png" alt="blueberry plate" class="section-gallery__img">
+							</div>
+							<div class="row">
+								<img src="image/img-gallery3.png" alt="mulberry plate" class="section-gallery__img">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<img src="image/img-gallery4.png" alt="glass of yogurt" class="section-gallery__img">
+						</div>
+						<div class="col-6">
+							<img src="image/img-gallery5.png" alt="persimmon" class="section-gallery__img">
+						</div>
+					</div>
+					</div>
+				</div>
+
+
+
+
+				<!-- <div class="section-gallery__photos">
 					<div class="row">
 						<div class="col-8">
 							<img src="image/img-gallery1.png" alt="plate of peaches" class="section-gallery__img">
@@ -159,8 +181,11 @@
 						</div>
 					</div>
 				</div>
+
+ -->
+
 				<div class="col-2 col-offset-5">
-					<a href=" " class="btn btn-second">
+					<a href="#" class="btn btn-second">
 						View more
 					</a>
 				</div>
@@ -197,7 +222,7 @@
 				<div class="row">
 					<div class="col-6 col-offset-3">
 						<div class="info info--center">
-							<div class="info__title info__title--big-margin">
+							<div class="info__title">
 								Blog
 							</div>
 							<p class="info__lead">
@@ -208,7 +233,7 @@
 				</div>
 				<div class="row">
 					<div class="col-4">
-						<a href="" class="blog-article blog-article--primary">
+						<a href="#" class="blog-article blog-article--primary">
 							<div class="blog-article__date">
 								<span class="blog-article__day">20</span>
 								<span class="blog-article__month">
@@ -225,7 +250,7 @@
 						</a>
 					</div>
 					<div class="col-4">
-						<a href="" class="blog-article blog-article--secondary">
+						<a href="#" class="blog-article blog-article--secondary">
 							<div class="blog-article__date">
 								<span class="blog-article__day">14</span>
 								<span class="blog-article__month">
@@ -242,7 +267,7 @@
 						</a>
 					</div>
 					<div class="col-4">
-						<a href="" class="blog-article blog-article--third">
+						<a href="#" class="blog-article blog-article--third">
 							<div class="blog-article__date">
 								<span class="blog-article__day">10</span>
 								<span class="blog-article__month">
@@ -261,7 +286,7 @@
 				</div>
 				<div class="row">
 					<div class="col-2 col-offset-5">
-						<a href=" " class="btn btn-fourth">
+						<a href="#" class="btn btn-fourth">
 						View more
 					</a>
 					</div>
@@ -287,7 +312,7 @@
 				<div class="row">
 					<div class="col-6">
 						<form class="form-contact">
-							<div class="wrapper-input">
+							<div class="wrapper-input wrapper--relative">
 								<input type="text" name="name" class="form-contact__text" placeholder="Your name" required>
 								<div class="form-contact__vertical-line"></div>
 							</div>
@@ -341,7 +366,9 @@
 						</div>
 					</div>
 					<div class="col-2 col-offset-2">
-						<a href="#" class="logo logo--small">Cahee</a>
+						<a href="#" class="logo">
+                          <img src="image/logo-small.svg" class="logo--small" alt="logotype">
+						</a>
 					</div>
 					<div class="col-3 col-offset-2">
 						<div class="site-author">
